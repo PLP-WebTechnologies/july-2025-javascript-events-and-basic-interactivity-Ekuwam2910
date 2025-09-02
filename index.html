@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Interactive Form Example</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>Interactive Web Page with Custom Form Validation</h1>
+
+    <section id="interactive-section-1">
+        <h2>Slider Control</h2>
+        <label for="sliderInput">Choose a value:</label>
+        <input type="range" id="sliderInput" min="0" max="100" value="50" />
+        <span id="sliderValue">50</span>
+    </section>
+
+    <section id="interactive-section-2">
+        <h2>Button Click Counter</h2>
+        <button id="clickButton">Click me</button>
+        <p>Clicked <span id="clickCount">0</span> times</p>
+    </section>
+
+    <section id="form-section">
+        <h2>Registration Form</h2>
+        <form id="registrationForm" novalidate>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" />
+            <span class="error" id="usernameError"></span>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" />
+            <span class="error" id="emailError"></span>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" />
+            <span class="error" id="passwordError"></span>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" />
+            <span class="error" id="confirmPasswordError"></span>
+
+            <button type="submit">Register</button>
+        </form>
+        <div id="formMessages"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
